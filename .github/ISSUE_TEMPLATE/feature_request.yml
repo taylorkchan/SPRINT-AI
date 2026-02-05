@@ -7,118 +7,49 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Thanks for suggesting a feature!
-
-        We love hearing ideas from our community. Please help us understand your use case by filling out the sections below.
-
-  - type: checkboxes
-    id: preflight
-    attributes:
-      label: Preflight Checklist
-      options:
-        - label: I have searched [existing requests](https://github.com/taylorkchan/SPRINT-AI/issues?q=is%3Aissue+label%3Aenhancement) and this feature hasn't been requested yet
-          required: true
-        - label: This is a single feature request (not multiple features)
-          required: true
+        We'd love to hear your ideas! Share as much or as little detail as you'd like.
 
   - type: textarea
-    id: problem
+    id: idea
     attributes:
-      label: Problem Statement
-      description: |
-        What problem are you trying to solve? Why do you need this feature?
-        Focus on the problem, not the solution.
-      placeholder: |
-        I often need to integrate with Shopify, but SPRINT doesn't support it...
-
-        When building mobile apps, I find it difficult to...
-    validations:
-      required: true
-
-  - type: textarea
-    id: solution
-    attributes:
-      label: Proposed Solution
-      description: |
-        How would you like this to work? Describe the ideal user experience.
-      placeholder: |
-        I'd like SPRINT to have a Shopify integration in the Build step that...
-
-        There should be an option in settings that allows...
-    validations:
-      required: true
-
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: Alternative Solutions
-      description: |
-        What alternatives have you considered or tried?
-        Are there workarounds you're currently using?
-      placeholder: |
-        I've tried manually adding Shopify SDK after SPRINT generates the code but...
-
-        Currently I work around this by...
-    validations:
-      required: false
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: How important is this feature to your workflow?
-      options:
-        - Critical - Blocking my work
-        - High - Significant impact on productivity
-        - Medium - Would be very helpful
-        - Low - Nice to have
-    validations:
-      required: true
-
-  - type: dropdown
-    id: category
-    attributes:
-      label: Feature Category
-      description: What area does this feature relate to?
-      options:
-        - Ideate workflow
-        - Visualize / Design extraction
-        - Define / Architecture
-        - Build / Code generation
-        - Test / QA automation
-        - Deploy / Publishing
-        - Figma integration
-        - Backend integrations (Supabase, Firebase, etc.)
-        - Mobile (Expo / React Native)
-        - Web (Vite / React)
-        - UI / User experience
-        - Settings / Configuration
-        - Other
+      label: What would you like to see?
+      description: Describe your idea or the problem you're trying to solve
+      placeholder: I wish SPRINT could...
     validations:
       required: true
 
   - type: textarea
     id: use_case
     attributes:
-      label: Use Case Example
-      description: |
-        Provide a concrete, real-world example of when you'd use this feature.
-      placeholder: |
-        Example scenario:
-        1. I'm building an e-commerce mobile app
-        2. I need to integrate with my existing Shopify store
-        3. With this feature, I could...
+      label: How would you use it?
+      description: Help us understand your workflow
+      placeholder: This would help me when...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category (optional)
+      options:
+        - Ideate
+        - Visualize / Design
+        - Define / Architecture
+        - Build / Code generation
+        - Test / QA
+        - Deploy
+        - Figma integration
+        - Backend integrations
+        - Mobile
+        - Web
+        - Other
     validations:
       required: false
 
   - type: textarea
     id: additional
     attributes:
-      label: Additional Context
-      description: |
-        - Screenshots or mockups of the proposed feature
-        - Links to similar features in other tools
-        - Any other relevant information
-      placeholder: Add any other context, mockups, or examples here...
+      label: Anything else?
+      description: Mockups, examples, or references welcome!
     validations:
       required: false

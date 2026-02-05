@@ -7,141 +7,63 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report this bug! Please fill out the sections below to help us understand and fix the issue.
-
-        Before submitting, please check:
-        - You're using the latest version of SPRINT
-        - This issue hasn't already been reported by searching [existing issues](https://github.com/taylorkchan/SPRINT-AI/issues?q=is%3Aissue+label%3Abug)
-
-  - type: checkboxes
-    id: preflight
-    attributes:
-      label: Preflight Checklist
-      description: Please confirm before submitting
-      options:
-        - label: I have searched existing issues and this hasn't been reported yet
-          required: true
-        - label: This is a single bug report (please file separate reports for different bugs)
-          required: true
-        - label: I am using the latest version of SPRINT
-          required: true
+        Thanks for helping us improve SPRINT! Don't worry about filling everything out perfectly - just share what you can.
 
   - type: textarea
-    id: actual
+    id: description
     attributes:
-      label: What's Wrong?
-      description: Describe what's happening that shouldn't be
-      placeholder: |
-        When I try to generate code from my Figma design, SPRINT shows an error "Failed to connect to Figma plugin"...
+      label: What happened?
+      description: Tell us what went wrong
+      placeholder: Describe the bug in your own words...
     validations:
       required: true
 
   - type: textarea
     id: expected
     attributes:
-      label: What Should Happen?
-      description: Describe the expected behavior
-      placeholder: SPRINT should successfully extract the design system and generate code
-    validations:
-      required: true
-
-  - type: textarea
-    id: error_output
-    attributes:
-      label: Error Messages/Logs
-      description: If you see any error messages, paste them here
-      placeholder: |
-        Paste any error output, stack traces, or relevant logs here.
-        This will be automatically formatted as code.
-      render: shell
+      label: What did you expect?
+      placeholder: What should have happened instead?
     validations:
       required: false
 
   - type: textarea
-    id: reproduction
+    id: steps
     attributes:
-      label: Steps to Reproduce
-      description: Please provide clear, numbered steps that anyone can follow to reproduce the issue.
+      label: Steps to reproduce (if known)
       placeholder: |
-        1. Open SPRINT and create a new project
-        2. Connect to Figma and select a design file
-        3. Click "Extract Design System"
-        4. Error appears: "..."
+        1.
+        2.
+        3.
     validations:
-      required: true
+      required: false
 
   - type: dropdown
     id: workflow_step
     attributes:
-      label: Workflow Step
-      description: Which step of the workflow were you in?
+      label: Which workflow step? (optional)
       options:
         - Ideate
         - Visualize
-        - Define (Spec)
-        - Build (MVP)
-        - Test (QA)
+        - Define
+        - Build
+        - Test
         - Deploy
-        - Not in a workflow step
-        - Not sure
+        - Not sure / Other
     validations:
-      required: true
-
-  - type: dropdown
-    id: project_type
-    attributes:
-      label: Project Type
-      description: What type of project were you building?
-      options:
-        - Web (Vite + React)
-        - Mobile (Expo / React Native)
-        - Both Web and Mobile
-        - Not applicable
-    validations:
-      required: true
-
-  - type: dropdown
-    id: regression
-    attributes:
-      label: Is this a regression?
-      description: Did this work in a previous version?
-      options:
-        - "Yes, this worked in a previous version"
-        - "No, this never worked"
-        - "I don't know"
-    validations:
-      required: true
+      required: false
 
   - type: input
     id: version
     attributes:
-      label: SPRINT Version
-      description: Which version of SPRINT are you using? (Check in app settings or About)
+      label: SPRINT version (optional)
       placeholder: "e.g., 1.0.0"
     validations:
-      required: true
-
-  - type: dropdown
-    id: os
-    attributes:
-      label: Operating System
-      options:
-        - macOS (Apple Silicon)
-        - macOS (Intel)
-        - Windows
-        - Linux
-    validations:
-      required: true
+      required: false
 
   - type: textarea
     id: additional
     attributes:
-      label: Additional Information
-      description: |
-        Anything else that might help us understand the issue?
-        - Screenshots (drag and drop images here)
-        - Figma file links
-        - Project configuration
-      placeholder: Any additional context, screenshots, or information...
+      label: Anything else?
+      description: Screenshots, error messages, or other context welcome!
     validations:
       required: false
