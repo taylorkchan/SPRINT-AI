@@ -1,0 +1,174 @@
+name: Model Behavior Issue
+description: Report unexpected AI model behavior, incorrect code generation, or quality issues
+title: "[MODEL] "
+labels:
+  - model
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Report Unexpected AI Behavior
+
+        Use this template when the AI generates unexpected code, makes incorrect assumptions, or produces low-quality output.
+
+        **This is for:** Incorrect code generation, design misinterpretation, wrong architecture decisions, AI hallucinations
+        **NOT for:** App crashes, UI bugs, or installation issues (use Bug Report instead)
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight Checklist
+      description: Please confirm before submitting
+      options:
+        - label: I have searched [existing issues](https://github.com/taylorkchan/SPRINT-AI/issues?q=is%3Aissue+label%3Amodel) for similar behavior reports
+          required: true
+        - label: This report does NOT contain sensitive information (API keys, passwords, etc.)
+          required: true
+
+  - type: dropdown
+    id: behavior_type
+    attributes:
+      label: Type of Behavior Issue
+      description: What category best describes the unexpected behavior?
+      options:
+        - AI generated incorrect/broken code
+        - AI misinterpreted my Figma design
+        - AI made wrong architecture decisions
+        - AI ignored my instructions or requirements
+        - AI generated code that doesn't match my tech stack preferences
+        - AI produced inconsistent design system
+        - AI created tests that don't cover the requirements
+        - AI deployment configuration is incorrect
+        - Other unexpected AI behavior
+    validations:
+      required: true
+
+  - type: dropdown
+    id: workflow_step
+    attributes:
+      label: Workflow Step
+      description: Which step did this occur in?
+      options:
+        - Ideate
+        - Visualize
+        - Define (Spec)
+        - Build (MVP)
+        - Test (QA)
+        - Deploy
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_you_provided
+    attributes:
+      label: What You Provided to SPRINT
+      description: Describe your inputs (prompts, Figma designs, requirements)
+      placeholder: |
+        I provided:
+        - A Figma design with a login screen containing email/password fields
+        - Instructions to use Supabase for authentication
+        - Requirement for iOS and Android support
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_sprint_did
+    attributes:
+      label: What SPRINT Generated
+      description: Describe what the AI produced
+      placeholder: |
+        SPRINT generated:
+        1. Login screen with only email field (missing password)
+        2. Used Firebase instead of Supabase
+        3. Code only works on iOS, crashes on Android
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Output
+      description: What should the AI have generated?
+      placeholder: |
+        Expected:
+        1. Login screen matching Figma with both email and password fields
+        2. Supabase authentication as specified
+        3. Working code for both iOS and Android
+    validations:
+      required: true
+
+  - type: textarea
+    id: code_samples
+    attributes:
+      label: Relevant Code Samples
+      description: |
+        Paste any relevant generated code that shows the issue
+      placeholder: |
+        ```typescript
+        // Generated code that has issues
+        ```
+      render: typescript
+    validations:
+      required: false
+
+  - type: dropdown
+    id: project_type
+    attributes:
+      label: Project Type
+      description: What type of project?
+      options:
+        - Web (Vite + React)
+        - Mobile (Expo / React Native)
+        - Both
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: Can You Reproduce This?
+      description: Does this happen consistently?
+      options:
+        - Yes, every time with the same inputs
+        - Sometimes (intermittent)
+        - No, only happened once
+        - Haven't tried to reproduce
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How severe was the impact?
+      options:
+        - Critical - Generated code doesn't work at all
+        - High - Significant manual fixes required
+        - Medium - Some manual corrections needed
+        - Low - Minor issues, mostly correct
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: SPRINT Version
+      description: Which version of SPRINT?
+      placeholder: "e.g., 1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: |
+        - Screenshots of Figma designs
+        - Full error messages
+        - Patterns you've noticed
+      placeholder: |
+        This seems to happen more often with:
+        - Complex multi-screen flows
+        - Specific Figma component patterns
+    validations:
+      required: false

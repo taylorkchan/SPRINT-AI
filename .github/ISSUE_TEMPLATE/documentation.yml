@@ -1,0 +1,112 @@
+name: Documentation Issue
+description: Report missing, unclear, or incorrect documentation
+title: "[DOCS] "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Help us improve our documentation!
+
+        Good documentation is crucial for a great user experience. Please let us know what's missing or confusing.
+
+  - type: dropdown
+    id: doc_type
+    attributes:
+      label: Documentation Type
+      description: What kind of documentation issue is this?
+      options:
+        - Missing documentation (feature not documented)
+        - Unclear/confusing documentation
+        - Incorrect/outdated documentation
+        - Typo or formatting issue
+        - Missing examples or tutorials
+        - Broken links
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Documentation Location
+      description: Where did you encounter this issue? Provide a URL if possible
+      placeholder: "e.g., https://sprint.dev/docs/figma-integration"
+    validations:
+      required: false
+
+  - type: input
+    id: section
+    attributes:
+      label: Section/Topic
+      description: Which specific section or topic needs improvement?
+      placeholder: "e.g., Figma Plugin Setup, Mobile Deployment"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current Documentation
+      description: |
+        What does the documentation currently say?
+        Quote the specific text if applicable.
+      placeholder: |
+        The docs currently say:
+        "To connect Figma, install the plugin..."
+
+        But it doesn't explain...
+    validations:
+      required: false
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: What's Wrong or Missing?
+      description: Explain what's incorrect, unclear, or missing
+      placeholder: |
+        The documentation doesn't explain how to:
+        - Configure the Figma plugin authentication
+        - Handle design system conflicts
+        - Debug connection issues
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested
+    attributes:
+      label: Suggested Improvement
+      description: How should the documentation be improved? Provide suggested text if possible
+      placeholder: |
+        The documentation should include:
+
+        1. Step-by-step guide for plugin installation
+        2. Screenshots showing each step
+        3. Troubleshooting section for common errors
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How much does this documentation issue affect users?
+      options:
+        - High - Prevents users from using a feature
+        - Medium - Makes feature difficult to understand
+        - Low - Minor confusion or inconvenience
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: |
+        - Screenshots showing the issue
+        - Links to related documentation
+        - Examples from other projects that do this well
+      placeholder: Any additional information that would help...
+    validations:
+      required: false
