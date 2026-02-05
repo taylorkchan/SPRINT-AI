@@ -12,33 +12,23 @@ SPRINT enables entrepreneurs, startup founders, and product teams to build and d
 
 1. **Ideate** - AI gathers your product vision through conversation
 2. **Visualize** - Extract design systems from Figma and generate interactive prototypes
-3. **Define** - Generate PRD, architecture, and technical specifications
-4. **Build** - Scaffold complete production-ready source code
-5. **Test** - AI-generated automated test suites with execution
-6. **Deploy** - Automated deployment to Vercel, App Store, and Play Store
+3. **Spec** - Generate PRD, architecture, and technical specifications
+4. **MVP** - Scaffold complete production-ready source code
+5. **QA** - AI-generated automated test suites with execution
+6. **Launch** - Automated deployment to Vercel, App Store, and Play Store
 
 ### Key Features
 
 - **Multi-Platform**: Build web, iOS, and Android apps from a single workflow
-- **Figma Integration**: Direct design system extraction and Figma-to-code pipeline
 - **AI-Powered**: Powered by Claude Opus 4.5 for intelligent code generation
 - **Automated Testing**: AI generates and executes comprehensive test suites
 - **One-Click Deploy**: Automated deployment to production platforms
 
-### Tech Stack
-
-| Platform | Technologies |
-|----------|--------------|
-| Web | Vite + React + Tailwind CSS |
-| Mobile | Expo SDK 52+ / React Native + NativeWind |
-| Backend | Supabase, Firebase, Stripe integrations |
-| AI | Claude Opus 4.5 via Model Context Protocol |
 
 ## Platform Support
 
 - macOS (Intel and Apple Silicon)
 - Windows (x64)
-- Linux (x64)
 
 ## Community
 
