@@ -30,6 +30,60 @@ SPRINT enables entrepreneurs, startup founders, and product teams to build and d
 - macOS (Intel and Apple Silicon)
 - Windows (x64)
 
+## Installation Guide
+
+Download the latest version from the [Releases](../../releases) page and follow the instructions for your platform below.
+
+### macOS
+
+1. Download the `.dmg` file for your Mac (ARM64 for Apple Silicon, x64 for Intel).
+2. Open the `.dmg` and drag SPRINT to your Applications folder.
+3. Launch SPRINT from Applications.
+
+#### Keychain Access Prompt
+
+On first launch, macOS may show a dialog asking:
+
+> **"Sprint wants to use your confidential information stored in "sprint Safe Storage" in your keychain."**
+
+**This is safe and expected.** SPRINT uses macOS Keychain to securely encrypt your login tokens and API keys on your device. This is the same secure storage system used by Safari, Mail, and other trusted applications.
+
+- Click **"Always Allow"** to grant permanent access (recommended) — you will not be asked again.
+- Click **"Allow"** to grant one-time access — you may be asked again next time.
+
+Your credentials never leave your machine. Keychain encryption is an industry-standard security practice that protects your data even if someone gains access to your files.
+
+### Windows
+
+1. Download the `.exe` installer from the [Releases](../../releases) page.
+2. Run the installer.
+
+#### Windows Defender SmartScreen Warning
+
+When running the installer, Windows may show a blue warning screen:
+
+> **"Windows protected your PC — Microsoft Defender SmartScreen prevented an unrecognized app from starting."**
+
+**This is safe.** This warning appears because SPRINT is a new application that has not yet built up a reputation with Microsoft's SmartScreen service. It does **not** mean the software is harmful — SmartScreen shows this for any new application that hasn't been downloaded by a large number of users yet.
+
+To continue the installation:
+
+1. Click **"More info"** on the warning screen.
+2. Click **"Run anyway"**.
+3. The installer will proceed normally.
+
+This warning will stop appearing once SPRINT has been downloaded by enough users to establish trust with Microsoft's systems.
+
+## Checking for Updates
+
+SPRINT includes automatic update checking. You can also manually check for updates:
+
+1. Open SPRINT and go to **Settings** (gear icon).
+2. Click the **Software Update** tab.
+3. Click **Check for Updates**.
+
+When an update is available, SPRINT will download it automatically and prompt you to restart.
+
 ## Community
 
 - [Report a Bug](../../issues/new?template=bug_report.yml)
