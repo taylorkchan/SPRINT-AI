@@ -6,23 +6,25 @@ SPRINT is an AI-powered desktop application that transforms product ideas into p
 
 ## What is SPRINT?
 
-SPRINT enables entrepreneurs, startup founders, and product teams to build and deploy apps in hours instead of months. No coding required.
+SPRINT enables solopreneurs, freelancers and product builders to build and deploy apps in hours instead of months. No coding required.
 
 ### The 6-Step Workflow
 
 1. **Ideate** - AI gathers your product vision through conversation
-2. **Visualize** - Extract design systems from Figma and generate interactive prototypes
-3. **Spec** - Generate PRD, architecture, and technical specifications
-4. **MVP** - Scaffold complete production-ready source code
+2. **Visualize** - Create design system and generate interactive prototypes(frontend only)
+3. **Spec** - Generate PRD, architecture, and technical specifications for detailed implementation
+4. **MVP** - Set up integrations and develop features in parallel
 5. **QA** - AI-generated automated test suites with execution
-6. **Launch** - Automated deployment to Vercel, App Store, and Play Store
+6. **Launch** - Automated deployment to Vercel, Supabase, App Store, and Play Store etc.
 
 ### Key Features
 
-- **Multi-Platform**: Build web, iOS, and Android apps from a single workflow
-- **AI-Powered**: Powered by Claude Opus 4.5 for intelligent code generation
-- **Automated Testing**: AI generates and executes comprehensive test suites
-- **One-Click Deploy**: Automated deployment to production platforms
+- **Multi-Platform**: Build web, iOS, and Android apps using React and React Native
+- **Design Tools**: Extract design systems from reference websites/Apps. Export frontend code to figma in seconds.
+- **App Analyzer**: Upload APK and get AI analysis on its functions and design system
+- **Specicalized Agents**: Battle tested agents for common integrations (Shopify, Google, Stripe etc.) 
+- **Parallel Development**: Chat per feature to enable parallel development.
+- **One-Click Deploy**: Automated deployment to production platforms including Google Play and App Store.
 
 
 ## Platform Support
@@ -32,7 +34,7 @@ SPRINT enables entrepreneurs, startup founders, and product teams to build and d
 
 ## Installation Guide
 
-Download the latest version from the [Releases](../../releases) page and follow the instructions for your platform below.
+Download the latest version from the [Releases](../../releases) page or official website and follow the instructions for your platform below.
 
 ### macOS
 
